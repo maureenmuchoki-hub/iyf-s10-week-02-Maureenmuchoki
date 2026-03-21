@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MY PORTFOLIO</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+
+<body> 
+
+<!---Navigation Bar-->
+<nav style="display:flex; gap: 10px;">
+    <div><a href="#Home">Home</a></div>
+    <div><a href="#about me">About Me</a></div> 
+    <div><a href="#contact">Contact</a></div>
+    <div><a href="address.html">Address</a></div>
+    
+</nav>
+
+<!---Profile Section-->
+<section class="profile" id="Home"> 
+<img src="images/My Profile.JPG">
+<h1 style="color:blue; text-decoration:underline; text-align: center;"> Hi👋I'm Maureen Muchoki</h1>
+<p style= "margin:auto; width: 700px;"> Welcome to my portfolio website. I am a creative web developer who loves building simple and beautiful websites. This portfolio highlights the projects and skills I’m developing as I grow in web design and development.</p>
+
+</section>
+
+<!---About Me Section-->
+<section id="about-me">
+  <h2>About Me</h2>
+  <p>I am an aspiring web developer learning HTML, CSS, and JavaScript. I enjoy building creative, clean, and user-friendly websites.</p>
+</section>
+
+<!---Skills Section-->
+<section class="skills" id="skills">
+    <h2> My Skills</h2>
+        <div class="skill-box">
+        <h3>HTML👌</h3>
+        <p>Building website structures</p>
+        </div>
+
+        <div class="skill-box">
+        <h3>CSS✅</h3>
+        <p>Designing beautiful websites</p>
+        </div><br> 
+
+        <div class="skill-box">
+        <h3>JavaScript😁</h3>
+        <p>Making websites interactive</p>
+        </div>
+
+        <div class="skill-box">
+        <h3>Probelm solving✌️</h3>
+        <p>Finding smart solutions</p>
+        </div>
+    
+</section>
+
+<!---Contact Form-->
+<section>
+    <section class="contact" id="contact">
+    <h3> Contact Me</h3>
+
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name"><br>
+        <input type="email" id="email" placeholder="Email"><br>
+        <textarea id="message" placeholder="Your message"></textarea><br>
+        <button type="submit">Send Message</button>
+        
+    <!-- Success message will appear here -->
+    <p id="formMessage"></p>
+
+
+    </form>
+
+</section>
+
+<footer>
+    &copy;2026 Maureen Muchoki❤️. Built with HTML & CSS
+</footer>
+
+<!-- Popup for contact form messages -->
+<div id="popup">
+    <span id="popupMessage"></span>
+    <button id="popupClose">Close</button>
+</div>
+
+<!-- Optional overlay to dim background -->
+<div id="overlay"></div>
+
+<script src = "js/main.js"></script>
+
+</body>
+
+
+
+</html>
