@@ -26,4 +26,4 @@ This project focuses on mastering CSS3 by building a responsive and visually app
 ## How to Run
 1. Clone this repository:
    ```bash
-   git clone https://github.com/MaisoriKitayama/week2-css-mastery.git
+   git clone https://github.com/maureenmuchoki-hub/iyf-s10-week-02-Maureenmuchoki.git
