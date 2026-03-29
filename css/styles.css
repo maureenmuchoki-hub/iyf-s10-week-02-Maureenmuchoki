@@ -51,6 +51,88 @@
         transition: transform 0.3s;
     }
 
+    /*Projects section*/
+    
+    .projects {
+    padding: 50px 20px;
+    background: #f4f6f8;
+    text-align: center;
+}
+
+/* 🔲 OUTER BOX (THIS IS YOUR CONTAINER) */
+.projects-box {
+    background: white;
+    padding: 30px;
+    max-width: 1100px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* 2 x 2 GRID INSIDE BOX */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* PROJECT CARD */
+.project-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* IMAGE FIX */
+.project-card img {
+    width: 250px;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+/* TEXT */
+.project-card h3 {
+    margin: 15px 0 5px;
+    padding: 0 15px;
+}
+
+.project-card p {
+    font-size: 14px;
+    padding: 0 20px;
+    color: #666;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+/* BUTTONS */
+.project-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+}
+
+.project-links a {
+    background: #007bff;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
     /*Contact section*/
     .contact{
         padding: 10px;
@@ -108,5 +190,4 @@
     height: 100%;
     background-color: rgba(0,0,0,0.5);
     z-index: 999;
-}
-
+} 

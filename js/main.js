@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+
     const contactForm = document.getElementById("contactForm");
     const popup = document.getElementById("popup");
     const popupMessage = document.getElementById("popupMessage");
@@ -9,9 +10,9 @@ document.addEventListener("DOMContentLoaded", function () {
         contactForm.addEventListener("submit", function (e) {
             e.preventDefault();
 
-            const name = document.getElementById("name").value.trim();
-            const email = document.getElementById("email").value.trim();
-            const message = document.getElementById("message").value.trim();
+            const name = document.getElementById("name")?.value.trim();
+            const email = document.getElementById("email")?.value.trim();
+            const message = document.getElementById("message")?.value.trim();
 
             if (!name || !email || !message) {
                 showPopup("Please fill in all fields!", "red");
@@ -23,10 +24,17 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    popupClose.addEventListener("click", closePopup);
-    overlay.addEventListener("click", closePopup);
+    if (popupClose) {
+        popupClose.addEventListener("click", closePopup);
+    }
+
+    if (overlay) {
+        overlay.addEventListener("click", closePopup);
+    }
 
     function showPopup(msg, color) {
+        if (!popup || !popupMessage || !overlay) return;
+
         popupMessage.textContent = msg;
         popupMessage.style.color = color;
         popup.style.display = "block";
@@ -34,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function closePopup() {
-        popup.style.display = "none";
-        overlay.style.display = "none";
+        if (popup) popup.style.display = "none";
+        if (overlay) overlay.style.display = "none";
     }
 });
