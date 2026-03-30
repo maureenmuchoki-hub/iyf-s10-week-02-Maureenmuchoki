@@ -44,8 +44,10 @@ Run locally with a live server extension (e.g., VS Code Live Server)
 
 ## Screenshots (optional)
 ![Portfolio Page](images/Portfolio-page.png)
+
 ![Address Page](images/Address-page.png)
+
 ![Projects Page](images/Projects-page.png)
 
-## Live Demo (if deployed)
+## Live Demo
 [View Live Demo](https://maureenmuchoki-hub.github.io/iyf-s10-week-02-Maureenmuchoki/)
