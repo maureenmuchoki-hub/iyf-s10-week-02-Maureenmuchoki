@@ -1,8 +1,9 @@
+/* Reset & box model */
 *{
         margin: 0;
         padding: 5px;
         box-sizing: border-box;
-        font-family: Arial, sans-serif;
+        font-family: Poppins, sans-serif;
     }
     /*Page styling*/
     body{
@@ -10,8 +11,8 @@
         margin: auto;
         background-color: skyblue;
         text-align: center;
+        line-height: 1.6;
     }
-    /*Page styling*/
 
     /* Navigation */
     nav{
@@ -26,7 +27,6 @@
         margin-left: 20px;
         text-decoration: none;
     }
-
 /*Projects section*/
 
 .projects-container {
@@ -34,6 +34,7 @@
     grid-template-columns: repeat(2, 1fr); /* 2 columns */
     gap: 20px; /* space between boxes */
     padding: 20px;
+    margin: auto;
 }
 
 .project-card {
@@ -41,6 +42,12 @@
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: white;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 .project-card img {
