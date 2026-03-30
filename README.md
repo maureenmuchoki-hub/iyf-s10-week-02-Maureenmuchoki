@@ -50,4 +50,4 @@ Run locally with a live server extension (e.g., VS Code Live Server)
 ![Projects Page](images/Projects-page.png)
 
 ## Live Demo
-[View Live Demo](https://maureenmuchoki-hub.github.io/iyf-s10-week-02-Maureenmuchoki/).
+[View Live Demo](https://maureenmuchoki-hub.github.io/iyf-s10-week-02-Maureenmuchoki/index.html)
