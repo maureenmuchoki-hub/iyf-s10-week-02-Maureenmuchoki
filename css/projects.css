@@ -12,6 +12,8 @@
         text-align: center;
     }
     /*Page styling*/
+
+    /* Navigation */
     nav{
         background-color: blue;
         padding: 10px 40px;
@@ -25,3 +27,26 @@
         text-decoration: none;
     }
 
+/*Projects section*/
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* space between boxes */
+    padding: 20px;
+}
+
+.project-card {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.project-card img {
+    width: 300px;        /* smaller fixed size */
+    height: auto;        /* keeps proportions */
+    display: block;
+    margin: 10px auto;   /* centers the image */
+    border-radius: 8px;
+}
